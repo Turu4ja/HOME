@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>coming_soon Room</title>
+    </head>
+
+    <body>
+        <style>
+            *,html,body {
+                margin: 0;
+                padding: 0;
+                transition: all 1.0s ease;
+            }
+
+            html {
+                background: linear-gradient(135deg, red, blue) no-repeat; 
+                font-family: 'Anta', sans-serif;
+            }
+
+            body {
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                height: 100vh;
+            }
+
+            .p {
+                text-shadow: rgb(255, 0, 0) 0px 0px 10px;
+            }
+
+            p {
+                color: rgb(255, 255, 255); 
+                text-align: center; 
+                font-size: 30px; 
+                text-shadow: rgb(0, 0, 255) 0px 0px 5px
+            }
+
+            p:hover {
+                transform: scale(3.1);
+                cursor: pointer;
+                transition: all 1.1s ease;
+            }
+
+            @media screen and (max-width: 600px) {
+                html {
+                    background: linear-gradient(135deg, rgb(0, 255, 0), blue);
+                }
+
+                .p {
+                    text-shadow: rgb(0, 255, 0) 0px 0px 10px;
+                }
+
+                p {
+                    color: rgb(255, 255, 255);
+                    text-shadow: rgb(0, 0, 255) 0px 0px 5px;
+                    font-size: 20px;
+                }
+
+                p:hover {
+                    transform: scale(1.9);
+                    cursor: pointer;
+                    transition: all 1.0s ease;
+                }
+            }
+        </style>
+        <p>
+            Rating Room is coming ,<p class="p">soon....</p>
+        </p>
+    </body>
+
+</html>

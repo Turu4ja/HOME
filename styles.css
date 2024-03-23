@@ -1,0 +1,190 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+:root {
+    --bg-a: rgb(0, 0, 0);
+    --bg-b: rgb(255, 255, 255);
+    --bg-c: rgb(58, 58, 58);
+
+    --bg-d: rgb(0, 0, 255);
+    --bg-1: rgb(0, 0, 209);
+    --bg-2: rgb(14, 14, 132);
+    --bg-e: rgb(0, 0, 89);
+
+    --bg-f: rgb(0, 218, 0);
+    --bg-g: rgb(0, 110, 0);
+    --bg-3: rgb(0, 44, 0);
+
+    --bg-h: rgb(0, 255, 255);
+    --bg-i: rgb(0, 153, 153);
+
+    --bg-j: rgb(255, 0, 0);
+    --bg-k: rgb(114, 0, 0);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+
+p {
+    font-family: "Silkscreen", sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: var(--bg-2);
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 35%;
+    background: linear-gradient(135deg,var(--bg-1), var(--bg-e));
+    color: var(--bg-b);
+    padding: 32px;
+    margin: 8px;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0, 11) 5px 5px 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/************************ ICONS **************************************************/
+
+.icons {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 27px;
+    height: 20px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.icons:hover {
+    transition: all 0.5s ease 0s;
+    transform: scale(1.2);
+    box-shadow: rgb(0, 0, 111) 3px 5px 2px;
+
+}
+
+.icons1 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+}
+
+.icons1:hover {
+    transition: all 0.5s ease 0s;
+    transform: scale(1.2);
+    box-shadow: rgb(0, 0, 111) 3px 5px 2px;
+}
+
+.icons2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+.icons2:hover {
+    transition: all 0.5s ease 0s;
+    transform: scale(1.2);
+    box-shadow: rgb(0, 0, 111) 3px 5px 2px;
+}
+
+/************************ ICONS **************************************************/
+
+.title {
+    font-size: 3em;
+    font-family: "Micro 5", sans-serif;
+}
+
+.title:hover {
+    transition: all 0.5s ease 0s;
+    text-shadow: rgb(0, 0, 111) 0.5em 0.3em 0.1em;
+    transform: scale(1.2);
+}
+
+.description {
+    margin-top: 8px;
+    font-size: 1.5em;
+}
+
+.description:hover {
+    text-shadow: rgb(0, 0, 60) 0.6em 0.3em 0.2em;
+    transform: scale(1.2);
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    background: var(--bg-1);
+    color: var(--bg-b);
+    border-radius: 5px;
+    width: 80%;
+    font-family: 'Anta', sans-serif;
+
+}
+
+.btn:hover {
+    transition: all 0.5s ease 0s;
+    transform: scale(1.2);
+    box-shadow: var(--bg-h) 5px 5px 0px;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 10px;
+    color: var(--bg-h);
+    background: linear-gradient(135deg,var(--bg-1), var(--bg-e));
+    text-shadow: black 0px 0px 3px;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+
+    .btn {
+        width: 60%;
+    }
+
+    .btn:hover {
+        box-shadow: rgb(123, 255, 123) 5px 5px 0px;
+    }
+
+    footer {
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.984),rgba(0, 157, 0, 0.984));
+        color: rgba(0, 255, 0, 0.984);;
+        text-shadow: rgb(0, 255, 0) 0px 0px 3px;
+    }
+}
